@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Text, Image, StyleSheet, Platform } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -11,41 +11,30 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+          source={require('@/assets/images/pat.jpeg')}
           style={styles.reactLogo}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
+        <ThemedText type="title">Patrick Tajaran</ThemedText>
+      
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
+      
+      <Text>
+        <Text style={styles.idk}>Product Manager</Text>
+      </Text>
+      
+      <Text>
+        <Text style={styles.idk}>About Me</Text>
+        
+      </Text>
+  
+      <Text>
+        <Text style={styles.t}>My name is Patrick Tajaran and I do many different sports like srla, Cross Country, and Volleyball. I am currently enrolled in Orthopeheadic Medical Magnet high school and will be graduating in June of 2027. I have a huge passion for business and would like to own and run a huge buisness in the future. I have an interest in music and is currently learning how to play the piano and guitar.</Text>
+        
+      </Text>
+      
+
     </ParallaxScrollView>
   );
 }
@@ -61,10 +50,20 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: 178,
+    height: 290,
     width: 290,
     bottom: 0,
-    left: 0,
-    position: 'absolute',
+    left: 65,
+    borderRadius: 100,
+   
   },
+  idk:{
+    fontSize: 30,
+    left: 55,
+  },
+  t:{
+    fontSize: 22,
+    left: 15,
+  }
+  
 });
